@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * 
  * @author binxian.tbx
- * @version $Id: App.java, v 0.1 2014Äê12ÔÂ19ÈÕ ÏÂÎç6:49:29 binxian.tbx Exp $
+ * @version $Id: App.java, v 0.1 2014å¹´12æœˆ19æ—¥ ä¸‹åˆ6:49:29 binxian.tbx Exp $
  */
 public class App {
     public static void main(String[] args) {
