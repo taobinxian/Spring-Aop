@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	<context:annotation-config />
+ 	<aop:aspectj-autoproxy /> 
+
+	<bean id="userService" class="com.alipay.baoxian.UserService" />
+	<bean id="aspect" class="com.alipay.baoxian.UserAspect" />
+	<!-- <aop:config> <aop:pointcut id="pointcut" expression="execution(* com.alipay.baoxian.UserService.* 
+		(int)) and args(id)"/> <aop:aspect ref="aspect"> <aop:before pointcut-ref="pointcut" 
+		method="before" arg-names="id"/> <aop:after-returning pointcut-ref="pointcut" 
+		method="afterReturn"/> <aop:after pointcut-ref="pointcut" method="after"/> 
+		<aop:after-throwing pointcut-ref="pointcut" method="exception" throwing="e"/> 
+		</aop:aspect> </aop:config> -->
+</beans>
