@@ -230,7 +230,6 @@
 
   <modules>
     <module>spring-aop</module>
-    <module>spring-web</module>
   </modules>
   
 </project>
